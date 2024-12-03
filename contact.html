@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* Apply the Nunito font to the entire page */
+        body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-image: url('background.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .container {
+        background-image: url('background.png');
+        background-size: cover;
+        background-position: center;
+        min-height: 100vh;
+        text-align: center;
+        color: #000;
+        position: relative;
+        z-index: 0;
+        padding-bottom: 50px; /* Add padding to ensure there's space at the bottom when scrolling */
+    }
+    .left-text, .text-below, header, nav {
+        position: relative; /* Keep these elements above the stars */
+        z-index: 1; /* Ensure they stay visible over the stars background */
+    }
+    header {
+        display: flex;
+        justify-content: space-between; /* Space between logo and navigation */
+        align-items: center;
+        padding: 20px;
+    }
+
+    .logo {
+        width: 110px;
+        height: auto;
+    }
+
+    .nav-links {
+        list-style: none;
+        display: flex;
+        justify-content: center; /* Center the links horizontally */
+        gap: 140px; /* Increase the space between links */
+        margin-left: 50px;
+        flex-grow: 1; /* Allow navigation to stretch */
+    }
+
+    .nav-links li {
+        display: inline;
+    }
+
+    .nav-links a {
+        font-family: 'Inter', sans-serif; /* Use the Inter font */
+        font-size: 1.5rem; /* Increase the font size */
+        letter-spacing: 2px; /* Add spacing between letters */
+        text-decoration: none; /* Remove underline */
+        color: black; /* Change link color (can adjust as needed) */
+        font-weight: 600; /* Make it bold for better visibility */
+        transition: color 0.3s ease; /* Add a hover effect transition */
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.306);
+    }
+
+    nav {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center; /* Center the navigation links */
+    }
+
+    .nav-links a:hover {
+        color: #ff9900; /* Change color on hover for interaction */
+    }
+
+    .social-icons img {
+        width: 20px;
+        margin-left: 10px;
+    }
+
+    main {
+        margin-top: 100px;
+    }
+
+    h1 {
+        font-size: 3rem;
+        margin: 0;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    .cta {
+        margin-top: 20px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #555;
+    }
+
+    .social-icons {
+        display: flex;
+        align-items: center;
+    }
+
+    .social-icons a {
+        margin-left: 15px; /* Adjust space between social icons */
+    }
+
+    .social-icons img {
+        width: 25px; /* Adjust icon size */
+        transition: transform 0.3s ease; /* Add a hover effect */
+    }
+
+    .social-icons img:hover {
+        transform: scale(1.2); /* Enlarge icon on hover */
+    }
+        footer {
+            margin-top: 30px;
+        }
+
+        footer p {
+            font-size: 1.2rem;
+        }
+
+        /* Style for resume section */
+        #resume {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        #resume iframe {
+            width: 80%;
+            height: 700px;
+            border: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html">
+                <img src="logo.png" alt="Logo" class="logo">
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="playground.html">playground</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="#resume">resume</a></li> <!-- Link to resume section -->
+                </ul>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/pray4christy" target="_blank">
+                        <img src="instagram.png" alt="Instagram">
+                    </a>
+                    <a href="mailto:christy.long04@gmail.com" target="_blank">
+                        <img src="mail.png" alt="Email">
+                    </a>
+                    <a href="https://www.linkedin.com/in/christy-long" target="_blank">
+                        <img src="linkedin.png" alt="LinkedIn">
+                    </a>
+                </div>
+            </nav>
+        </header>
+            <!-- Resume Section -->
+            <section id="resume">
+                <h2>My Resume</h2>
+                <iframe src="Christy_Long_CS_May2027.pdf" width="100%" height="600px" style="border: none;"></iframe>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 My Portfolio</p>
+        </footer>
+    </div>
+</body>
+</html>
