@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('background.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .container {
+            background-image: url('background.png');
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+            text-align: center;
+            color: #000;
+            position: relative;
+            z-index: 0;
+            padding-bottom: 50px; 
+        }
+
+        .left-text, .text-below, header, nav {
+            position: relative; 
+            z-index: 1; 
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+            padding: 20px;
+        }
+
+        .logo {
+            width: 110px;
+            height: auto;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 140px;
+            margin-left: 50px;
+            flex-grow: 1;
+        }
+
+        .nav-links li {
+            display: inline;
+        }
+
+        .nav-links a {
+            font-family: 'Inter', sans-serif; 
+            font-size: 1.5rem; 
+            letter-spacing: 2px; 
+            text-decoration: none; /* Remove underline */
+            color: black; /* Change link color (can adjust as needed) */
+            font-weight: 600; /* Make it bold for better visibility */
+            transition: color 0.3s ease; /* Add a hover effect transition */
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.306);
+        }
+
+        nav {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center; /* Center the navigation links */
+        }
+
+        .nav-links a:hover {
+            color: #ff9900; /* Change color on hover for interaction */
+        }
+
+        .social-icons img {
+            width: 20px;
+            margin-left: 10px;
+        }
+
+        main {
+            margin-top: 100px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
+
+        .cta {
+            margin-top: 20px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #555;
+        }
+
+        .social-icons {
+            display: flex;
+            align-items: center;
+        }
+
+        .social-icons a {
+            margin-left: 15px; /* Adjust space between social icons */
+        }
+
+        .social-icons img {
+            width: 25px; /* Adjust icon size */
+            transition: transform 0.3s ease; /* Add a hover effect */
+        }
+
+        .social-icons img:hover {
+            transform: scale(1.2); /* Enlarge icon on hover */
+        }
+
+        /* New styles for image and text section */
+        .about-me {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+            padding: 20px;
+        }
+
+        .about-me img {
+            width: 500px; /* Size of your picture */
+            height: auto;
+            border-radius: 50%; /* Make the image circular */
+            margin-right: 20px;
+            margin-top: -10%;
+        }
+
+        .description {
+            max-width: 600px;
+            text-align: left;
+            font-family: 'Nunito', sans-serif; /* Apply Nunito font here */
+            margin-top: -10%;
+        }
+
+        /* Separate "Hello!" and description with a distinct style */
+        .hello {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 20px; /* Add some space below "Hello!" */
+            color: #333;
+            text-shadow: 0px 0px 10px rgba(58, 147, 255, 0.292);
+        }
+
+        .about-description {
+            font-size: 1.2rem;
+            color: #333;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html">
+                <img src="logo.png" alt="Logo" class="logo">
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="playground.html">playground</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="contact.html">resume</a></li>
+                </ul>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/pray4christy" target="_blank">
+                        <img src="instagram.png" alt="Instagram">
+                    </a>
+                    <a href="mailto:christy.long04@gmail.com" target="_blank">
+                        <img src="mail.png" alt="Email">
+                    </a>
+                    <a href="https://www.linkedin.com/in/christy-long" target="_blank">
+                        <img src="linkedin.png" alt="LinkedIn">
+                    </a>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class="about-me">
+                <img src="crispy.JPG" alt="Christy Long">
+                <div class="description">
+                    <h3 class="hello">Hello!</h3>
+                    <p class="about-description"><p>Hi, I'm Christy and I hail from Atlanta. I'm passionate about using visual storytelling to solve real-world problems, combining design and development to address bigger issues. Currently, I’m a second-year Computational Media major and Industrial Design minor at Georgia Tech, where I continue to explore how technology and design intersect.</p>
+                    <p>When I'm not diving into projects, you’ll likely find me scrolling through Pinterest for inspiration, riding my scooter around, or simply designing! Designing to me is all about telling a story using empathy, creativity, and a little bit of magic!</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 My Portfolio</p>
+        </footer>
+    </div>
+    
+</body>
+</html>
